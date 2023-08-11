@@ -42,4 +42,4 @@ This C program prints the size of various types on the computer it is compiled a
 
 ---
 
-Feel free to explore each file and its purpose for a better understanding of the tasks.
+
