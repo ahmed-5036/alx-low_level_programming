@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.*}.s" && echo "Assembly code generated successfully in ${CFILE%.*}.s" || echo "Failed to generate assembly code."
