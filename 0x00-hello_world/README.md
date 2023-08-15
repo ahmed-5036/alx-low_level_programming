@@ -41,5 +41,6 @@ This C program uses the `printf` function to print the text "with proper grammar
 This C program prints the size of various types on the computer it is compiled and run on.
 
 ---
+---
 
 
