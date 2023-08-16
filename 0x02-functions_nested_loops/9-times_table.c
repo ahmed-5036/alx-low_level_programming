@@ -22,6 +22,10 @@ if (product >= 10)
 _putchar(product / 10 + '0');
 _putchar(product % 10 + '0');
 }
+else if (product == 0 && column == 0)
+{
+putchar(product + '0');
+}
 else
 {
 _putchar(' ');
