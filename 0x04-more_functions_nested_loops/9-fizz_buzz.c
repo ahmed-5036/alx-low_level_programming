@@ -23,3 +23,8 @@ if (i != 100)
 printf(" ");
 }
 }
+int main(void)
+{
+fizz_buzz();
+return (0);
+}
