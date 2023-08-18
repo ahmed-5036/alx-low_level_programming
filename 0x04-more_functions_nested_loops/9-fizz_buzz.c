@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - main function
  * fizz_buzz - Prints the numbers from 1 to 100, with Fizz for multiples of 3,
+ * main - main function
  * Buzz for multiples of 5, and FizzBuzz for multiples of both 3 and 5.
  */
 void fizz_buzz(void)
