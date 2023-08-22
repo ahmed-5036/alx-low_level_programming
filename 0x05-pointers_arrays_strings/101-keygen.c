@@ -6,17 +6,20 @@
 
 int main(void)
 {
-srand(time(NULL));
+    srand(time(NULL));
 
-char password[PASSWORD_LENGTH + 1];
-const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
+    char password[PASSWORD_LENGTH + 1];
+    const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
 
-for (int i = 0; i < PASSWORD_LENGTH; i++)
-{
-int index = rand() % (sizeof(charset) - 1);
-password[i] = charset[index];
-}
-password[PASSWORD_LENGTH] = '\0';
-printf("%s\n", password);
-return 0;
+    int i;
+    for (i = 0; i < PASSWORD_LENGTH; i++)
+    {
+        int index = rand() % (sizeof(charset) - 1);
+        password[i] = charset[index];
+    }
+    password[PASSWORD_LENGTH] = '\0';
+
+    printf("%s\n", password);
+
+    return 0;
 }
