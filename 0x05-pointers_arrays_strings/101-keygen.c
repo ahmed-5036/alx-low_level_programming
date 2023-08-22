@@ -10,13 +10,15 @@ int main(void)
 
     char password[PASSWORD_LENGTH + 1];
     const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
-    int i; // Declare i here
 
+    int i;
+
+    /* Generate a password using sequential characters from charset */
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
-        int index = rand() % (sizeof(charset) - 1);
-        password[i] = charset[index];
+        password[i] = charset[i % (sizeof(charset) - 1)];
     }
+
     password[PASSWORD_LENGTH] = '\0';
 
     printf("%s\n", password);
