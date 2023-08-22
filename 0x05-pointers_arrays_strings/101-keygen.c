@@ -10,8 +10,8 @@ int main(void)
 
     char password[PASSWORD_LENGTH + 1];
     const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
+    int i; // Declare i here
 
-    int i;
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
         int index = rand() % (sizeof(charset) - 1);
