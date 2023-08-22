@@ -4,11 +4,12 @@
 
 int main(void)
 {
+    char password[];
     srand(time(NULL));
-
-    char password[12 + 1];
+    password[13];
+    
     const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
-    int password_length = 12; // Length of password
+    int password_length = 12;
 
     int i;
 
