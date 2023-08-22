@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    char password[];
+    char password[13];
     srand(time(NULL));
     password[13];
     
