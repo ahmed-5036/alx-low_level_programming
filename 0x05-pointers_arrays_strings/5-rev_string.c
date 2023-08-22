@@ -10,6 +10,7 @@ int length = 0;
 char temp;
 while (s[length] != '\0')
 length++;
+int i;
 for (int i = 0; i < length / 2; i++)
 {
 temp = s[i];
