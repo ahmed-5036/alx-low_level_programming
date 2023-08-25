@@ -25,5 +25,6 @@ char *cap_string(char *);
 /* Task 7: Encode a string into "1337" */
 char *leet(char *);
 
+void print_number(int n);
 #endif /* MAIN_H */
 
