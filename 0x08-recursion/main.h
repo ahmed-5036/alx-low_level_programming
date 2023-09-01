@@ -29,7 +29,7 @@ int is_prime_helper(int n, int divisor);
 /* Task 7 */
 int is_palindrome(char *s);
 int _strlen(char *s);
-check_palindrome(char *s, int start, int end);
+int check_palindrome(char *s, int start, int end);
 /* Task 8 */
 int wildcmp(char *s1, char *s2);
 #endif /* MAIN_H */
