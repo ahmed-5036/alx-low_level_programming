@@ -24,6 +24,7 @@ int _sqrt_recursion(int n);
 int calculate_sqrt(int n, int guess);
 /* Task 6: is_prime_number */
 int is_prime_number(int n);
+int is_prime_helper(int n, int divisor);
 
 #endif /* MAIN_H */
 
