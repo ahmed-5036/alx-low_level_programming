@@ -21,7 +21,7 @@ int _pow_recursion(int x, int y);
 
 /* Task 5: _sqrt_recursion */
 int _sqrt_recursion(int n);
-
+int calculate_sqrt(int n, int guess);
 /* Task 6: is_prime_number */
 int is_prime_number(int n);
 
