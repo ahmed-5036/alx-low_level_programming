@@ -10,6 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-printf("%d\n", argc - 1); /* Subtract 1 to exclude program name */
+(void)argv;
+printf("%d\n", argc - 1);
 return (0);
 }
