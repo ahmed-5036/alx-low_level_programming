@@ -19,11 +19,19 @@ return (0);
 }
 for (i = 1; i < argc; i++)
 {
-int num = atoi(argv[i]);
-if (num == 0 && argv[i][0] != '0')
+char *arg = argv[i];
+int num = 0;
+int j = 0;
+
+while (arg[j] != '\0')
+{
+if (arg[j] < '0' || arg[j] > '9')
 {
 printf("Error\n");
 return (1);
+}
+num = num * 10 + (arg[j] - '0');
+j++;
 }
 sum += num;
 }
