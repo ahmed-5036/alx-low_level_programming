@@ -1,19 +1,22 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * print_dog - func
  *
- * Return: Always 0
- */
-int main(void)
+ * @d: pointer to struct dog
+ *
+ * Return: void
+*/
+
+void print_dog(struct dog *d)
 {
-    struct dog my_dog;
-
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-
-    print_dog(&my_dog);
-    return (0);
+	if (d != NULL)
+	{
+		printf("Name: ");
+		d->name == NULL ? printf("(nil)\n") : printf("%s\n", d->name);
+		printf("Age: %f\n", d->age);
+		printf("Owner: ");
+		d->owner == NULL ? printf("(nil)\n") : printf("%s\n", d->owner);
+	}
 }
