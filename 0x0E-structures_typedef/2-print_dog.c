@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdio.h>
+#include "dog.h"
 
 /**
  * main - Entry point
