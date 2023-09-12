@@ -1,9 +1,12 @@
 #include <stdio.h>
-#include "2-main.h"
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-printf(__FILE__"\n");
+printf("%s\n", __FILE__);
 return (0);
 }
-
