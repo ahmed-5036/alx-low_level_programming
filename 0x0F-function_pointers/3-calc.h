@@ -1,7 +1,13 @@
-#ifndef CALC_H
-#define CALC_H
+/* 3-calc.h */
 
-/* Structure for function pointers */
+#ifndef _3_CALC_H
+#define _3_CALC_H
+
+/**
+ * struct op - Struct op
+ * @op: The operator
+ * @f: The function associated
+ */
 typedef struct op
 {
 char *op;
@@ -17,4 +23,4 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int);
 
-#endif /* CALC_H */
+#endif /* _3_CALC_H */
