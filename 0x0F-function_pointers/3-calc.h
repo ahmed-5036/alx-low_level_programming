@@ -1,5 +1,3 @@
-/* 3-calc.h */
-
 #ifndef _3_CALC_H
 #define _3_CALC_H
 
