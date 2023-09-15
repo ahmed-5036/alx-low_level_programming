@@ -3,6 +3,17 @@
 #include <stdio.h>
 
 /**
+ * _putchar - Writes a character to stdout.
+ * @c: The character to print.
+ *
+ * Return: The number of characters printed (1).
+ */
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
+
+/**
  * print_all - Prints anything based on a format string.
  * @format: A list of types of arguments passed to the function.
  */
@@ -16,11 +27,11 @@ va_start(args, format);
 while (format && format[i])
 {
 if (separator)
-printf(", ");
+_putchar(',');
 switch (format[i])
 {
 case 'c':
-printf("%c", va_arg(args, int));
+_putchar(va_arg(args, int));
 break;
 case 'i':
 printf("%d", va_arg(args, int));
@@ -43,5 +54,5 @@ separator = 1;
 i++;
 }
 va_end(args);
-printf("\n");
+_putchar('\n');
 }
