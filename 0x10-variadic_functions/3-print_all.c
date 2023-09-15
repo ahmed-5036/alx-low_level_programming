@@ -11,9 +11,12 @@ void print_all(const char * const format, ...)
 va_list args;
 char *str;
 unsigned int i = 0;
+int separator = 0;
 va_start(args, format);
 while (format && format[i])
 {
+if (separator)
+printf(", ");
 switch (format[i])
 {
 case 'c':
@@ -36,8 +39,7 @@ default:
 i++;
 continue;
 }
-if (format[i + 1])
-printf(", ");
+separator = 1;
 i++;
 }
 va_end(args);
