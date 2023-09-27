@@ -37,5 +37,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 /* Prototype for the _putchar function */
 int _putchar(char c);
 
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+
 #endif /* LISTS_H */
 
