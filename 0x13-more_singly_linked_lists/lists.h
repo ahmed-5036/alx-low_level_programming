@@ -15,7 +15,7 @@ size_t print_listint(const listint_t *h);
 
 /* Function to return the number of elements in a listint_t list */
 size_t listint_len(const listint_t *h);
-
+void free_listint2(listint_t **head);
 /* Function to add a new node at the beginning of a listint_t list */
 listint_t *add_nodeint(listint_t **head, const int n);
 
