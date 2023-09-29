@@ -23,6 +23,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 /* Task 6: Endianness */
 int get_endianness(void);
-
+int _putchar(char c);
 #endif /* MAIN_H */
 
