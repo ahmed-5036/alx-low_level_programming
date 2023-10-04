@@ -7,6 +7,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <elf.h>
+#include <string.h>
 /* Function prototypes */
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
@@ -16,5 +18,7 @@ int copy_file(const char *file_from, const char *file_to);
 void elf_header(const char *elf_filename);
 void handle_error(const char *message, const char *file, int exit_code);
 void close_files(int fd1, int fd2);
+void print_elf_header(Elf64_Ehdr *ehdr);
+int main(int argc, char *argv[]);
 #endif /* MAIN_H */
 
