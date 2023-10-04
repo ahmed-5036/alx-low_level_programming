@@ -20,5 +20,7 @@ void handle_error(const char *message, const char *file, int exit_code);
 void close_files(int fd1, int fd2);
 void print_elf_header(Elf64_Ehdr *ehdr);
 int main(int argc, char *argv[]);
+void error_exit(const char *msg, int exit_code);
+void print_elf_header(Elf64_Ehdr *h);
 #endif /* MAIN_H */
 
